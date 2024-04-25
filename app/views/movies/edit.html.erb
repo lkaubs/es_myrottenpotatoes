@@ -1,0 +1,50 @@
+<style>
+    * {
+      font-family: Arial, sans-serif;
+      line-height: 1;
+      background-color: #fdfd96;
+      color: black;
+      }
+      h1
+        {text-align: center}
+</style>
+    <h1>Edite o filme</h1>
+<body>
+    <%= form_with model: @movie do |form| %>
+    <div>
+        <%= form.label "Título" %><br>
+        <%= form.text_field :title, :value => @movie.title %>
+        <% @movie.errors.full_messages_for(:title).each do |message| %>
+            <div, style = 'color: #ff0000'><%= 'Coloque o título do filme' %></div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label "Classificação" %><br>
+        <%= form.text_field :rating, :value => @movie.rating %>
+        <div, style = 'color: #ff0000'><%= 'Coloque uma classificação indicativa válida como: L, 10, 12, 14, 16 e 18' unless
+            @movie.errors.full_messages_for(:rating).length == 0 %></div>
+    </div>
+
+    <div>
+        <%= form.label "Data de Lançamento" %><br>
+        <%= form.text_field :release_date, :value => @movie.release_date %>
+        <div, style = 'color: #ff0000'><%= 'Coloque uma data válida e no modelo yyyy-mm-dd' unless
+            @movie.errors.full_messages_for(:release_date).length == 0 %></div>
+    </div>
+
+    <div>
+        <%= form.label "Sinopse do Filme" %><br>
+        <%= form.text_area :description, style: 'width: 750px; height: 320px', :value => @movie.description%>
+        <% @movie.errors.full_messages_for(:description).each do |message| %>
+            <p, style = 'color: #ff0000'><%= 'Coloque a sinopse do filme' %></p>
+        <% end %>
+    </div>
+        <br>
+    <div>
+        <%= form.submit "Editar filme"%>
+    </div>
+    <% end %>
+</body>
+
+<%= link_to "Voltar", movies_path, class: "btn btn-primary" %>

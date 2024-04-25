@@ -1,0 +1,31 @@
+<style>
+    * {
+      background-color: #fdfd96;
+      color: black;
+      font-family: Arial, sans-serif;
+      line-height: 1;
+      text-align: center
+      }
+</style>
+<h1>Rotten Potatoes</h1>
+<h2, b>Tabela De Filmes</h2>
+<table class="tabela_de_filmes"; style="margin: auto auto; border-spacing: 15px">
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Classificação</th>
+      <th>Data De Lançamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr, style="text-align: center">
+        <td><%= link_to movie.title, movie_path(movie) %></td>
+        <td><%= movie.rating %></td>
+        <td><%= Date.parse(movie.release_date).strftime('%d/%m/%Y') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Novo Filme", new_movie_path %>
