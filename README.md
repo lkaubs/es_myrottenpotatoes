@@ -11,3 +11,4 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 ```bash
 .../caminho_do_repositorio/$ rails server
 ```
+* E, com isso, o site será hospedado no server local.
