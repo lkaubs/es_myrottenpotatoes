@@ -9,6 +9,6 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 
 * Basta, no repositório do trabalho escrever o seguinte comando:
 ```bash
-.../caminho_do_repositorio/$ rails server
+...\es_myrottenpotatoes> $ rails server
 ```
 * E, com isso, o site será hospedado no server local.
