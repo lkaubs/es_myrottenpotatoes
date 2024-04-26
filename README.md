@@ -12,3 +12,8 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 ...\es_myrottenpotatoes> $ rails server
 ```
 * E, com isso, o site será hospedado no server local.
+
+# Requisitos
+*   Rails instalado
+    * Ruby
+    * Sqlite3
