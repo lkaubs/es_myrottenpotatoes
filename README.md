@@ -4,3 +4,8 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 * Utilizando do Ruby em Rails, um framework web baseado na linguagem Ruby que utiliza bem dos aspectos de Orientação a Objeto da linguagem.
 * O projeto disposto tem por objetivo o desenvolvimento e aperfeiçoamento do conceito de Software como um serviço.
 * Lidando, assim, com aplicações web que não possui necessidade de instalação de aplicativos.
+
+# Como usar?
+
+* Basta, no repositório do trabalho escrever o seguinte comando:
+  $ rails server
