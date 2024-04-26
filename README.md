@@ -1,7 +1,7 @@
-# README
+# Projeto de Engenharia de Software
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O projeto consistia em implementar a própria versão do Rotten Potatoes, um catálogo de filmes.
+
 
 Things you may want to cover:
 
@@ -20,5 +20,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
