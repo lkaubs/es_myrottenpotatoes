@@ -8,6 +8,6 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 # Como usar?
 
 * Basta, no repositório do trabalho escrever o seguinte comando:
-''' bash
-  $ rails server
-'''
+```bash
+$ rails server
+```
