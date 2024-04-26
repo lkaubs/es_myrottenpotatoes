@@ -9,5 +9,5 @@ O projeto consistia em implementar a própria versão do Rotten Potatoes, um cat
 
 * Basta, no repositório do trabalho escrever o seguinte comando:
 ```bash
-.../caminho_do_repositório/$ rails server
+.../caminho_do_repositorio/$ rails server
 ```
